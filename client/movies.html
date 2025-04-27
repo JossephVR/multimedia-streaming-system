@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnStream</title>
+    <link rel="stylesheet" href="styles/styleMovies.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="logo">OnStream</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search bar centered -->
+    <div class="searchBarContainer">
+        <input type="text" id="searchBar" placeholder="Search video...">
+    </div>
+
+    <div id="videoGrid"></div>
+
+    <!-- Modal for playing videos -->
+    <div id="playerModal">
+        <div class="modalContent">
+            <span class="closeModal">&times;</span>
+            <video id="videoPlayer" controls></video>
+        </div>
+    </div>
+
+    <script src="scripts/connectionMovies.js"></script>
+</body>
+</html>

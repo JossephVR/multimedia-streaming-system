@@ -1,0 +1,197 @@
+/* General style */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Logo style */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Navigation links style */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Link style */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Link hover effect */
+.nav-links a:hover {
+    color: #1DB954;
+}
+
+/* Search bar style */
+input[type="text"] {
+    margin: 20px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Search bar placeholder style */
+input[type="text"]::placeholder {
+    color: #aaaaaa;
+}
+
+/* Video grid style */
+#videoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+/* Video card style */
+.videoCard {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* automatic height */
+}
+
+/* Video card hover effect */
+.videoCard:hover {
+    transform: scale(1.05);
+    background-color: #333333;
+    transition: transform 0.3s;
+}
+
+/* Video style */
+.videoCard video {
+    width: 100%;
+    height: 150px; /* fixed height to prevent growth */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Video title style */
+.videoCard h3 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Play button style */
+.playButton {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Play button hover effect */
+.playButton:hover {
+    transform: scale(1.1);
+}
+
+/* Modal style */
+#playerModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal content style */
+.modalContent {
+    background-color: #1e1e1e;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Video in modal style */
+#videoPlayer {
+    width: 100%;
+    border-radius: 5px;
+    max-height: 70vh;
+}
+
+/* Close button style in modal */
+.closeModal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Close button hover and focus effect */
+.closeModal:hover,
+.closeModal:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Search bar container style */
+.searchBarContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Search bar style inside container */
+.searchBarContainer input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Placeholder style for search bar */
+.searchBarContainer input[type="text"]::placeholder {
+    color: #aaaaaa;
+}

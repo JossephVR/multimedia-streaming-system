@@ -1,0 +1,203 @@
+/* General body style */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Top navigation bar */
+.navbar {
+    background-color: #181818; /* Navigation bar background */
+    width: 95%;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo style */
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1DB954; 
+}
+
+/* Navigation links container */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+/* List items in navigation */
+.nav-links li {
+    margin-left: 20px;
+}
+
+/* Navigation links style */
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+/* Navigation links hover effect */
+.nav-links a:hover {
+    color: #1DB954;
+}
+
+/* Search bar style */
+#searchBar {
+    margin: 20px;
+    padding: 10px 15px;
+    width: 80%;
+    max-width: 600px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333333; /* Dark background */
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Music card grid container */
+#musicGrid {
+    display: flex;
+    flex-direction: column; /* Change from "wrap" to a column to make it a list */
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Music list card elements */
+.trackCard {
+    background-color: #282828; /* Dark background */
+    margin: 10px 0; /* Spacing between each card to look like a list */
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%; /* Occupies full available width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+/* Hover effect for music cards */
+.trackCard:hover {
+    transform: scale(1.02); /* Slight hover effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Track name inside the list */
+.trackCard h3 {
+    margin: 0;
+    font-size: 18px; /* Adjust size for better readability */
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+/* Play button inside the list */
+.playButton {
+    padding: 10px 20px;
+    background-color: #1DB954; /* Spotify's green */
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 20px; /* Spacing between text and button */
+}
+
+/* Hover effect for play button */
+.playButton:hover {
+    background-color: #1ed760;
+    transform: scale(1.1);
+}
+
+/* Player container style */
+#playerContainer {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #282828;
+    padding: 10px 20px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    gap: 10px;
+}
+
+/* Player control buttons style */
+.controlButton {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Hover effect for control buttons */
+.controlButton:hover {
+    color: #1DB954;
+}
+
+/* Close player button style */
+#closePlayer {
+    background-color: #ff4d4d;
+    border: none;
+    color: #ffffff;
+    padding: 5px 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for close player button */
+#closePlayer:hover {
+    background-color: #e60000;
+}
+
+/* Mobile device styles */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    .navbar .logo {
+        float: none;
+        text-align: center;
+    }
+
+    .movie-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-row img {
+        width: 80%;
+        height: auto;
+    }
+
+    .mp4-links {
+        align-items: flex-start;
+        padding: 0 20px;
+    }
+}

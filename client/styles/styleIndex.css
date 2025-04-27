@@ -1,0 +1,128 @@
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Logo styles */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1DB954;
+}
+
+/* Navigation links container */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Navigation links styles */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    color: #1DB954;
+}
+
+/* User profile image styles */
+.user-profile img {
+    border-radius: 50%;
+}
+
+/* Movie section styling */
+.movie-section {
+    margin: 20px;
+}
+
+/* Movie section title styling */
+.movie-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Movie row styling (for horizontal scrolling) */
+.movie-row {
+    overflow-x: auto;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 40px;
+    scrollbar-color: #1DB954 #2c2c2c;
+}
+
+/* Movie image styling */
+.movie-row img {
+    width: 200px;
+    height: 330px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Hover effect for movie images */
+.movie-row img:hover {
+    transform: scale(1.1);
+}
+
+/* Modal overlay styling */
+#playerModal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal content styling */
+.modalContent {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Video player inside modal */
+#videoPlayer {
+    width: 80vw;
+    height: 45vw;
+    max-width: 800px;
+    max-height: 450px;
+}
+
+/* Close button inside modal */
+.closeModal {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}

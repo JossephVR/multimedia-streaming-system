@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnStream</title>
+    <link rel="stylesheet" href="styles/styleIndex.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="logo">OnStream</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="music.html">Music</a></li>
+        </ul>
+        <div class="user-profile">
+            <img src="img/Icon.jpeg" alt="Profile">
+        </div>
+    </nav>
+
+    <!-- Movie carousel -->
+    <section class="movie-section">
+        <h2>OnStream Catalog</h2>
+        <div class="movie-row" id="movieRow">
+            <!-- Movies will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Video Modal Overlay -->
+    <div id="playerModal" class="modal-overlay">
+        <div class="modalContent">
+            <span class="closeModal">&times;</span>
+            <video id="videoPlayer" controls>
+                Your browser does not support the video element.
+            </video>
+        </div>
+    </div>
+
+    <script src="scripts/connectionIndex.js"></script>
+</body>
+</html>
